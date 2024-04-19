@@ -1,0 +1,151 @@
+
+body { 
+    /* Margin = espaço na margem do site*/
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+
+    /* Degrade da pagina inteira, verde fraco de baixo para cima */
+    /* (linear-gradient) Funcionar do jeito que eu colocar entre parentes () */
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    /* Altura do site (altura minimo de 100vh) */
+min-height: 100vh ;
+
+}
+
+.page {
+    width: 1000px;
+    /* Margem de 0 */
+    margin: 0 auto;
+    /* preechimento no topo de 65px */
+    padding-top: 65px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 55px;
+
+    font-family: "Mulish", sans-serif;
+}
+
+ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Tirar o sublinhado das palavras home, sobre, treinar */
+ a {
+    color: #1F1534;
+    text-decoration: none;
+}
+
+ul li a {
+    opacity: 0.5;
+}
+
+/* pseudo-class (:hover) deixar preto quando passa p mauser em cima ddas palavras - home, sobre, treinar*/
+ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+h1, ul {
+    font-family: "Mulish", sans-serif;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #1F1534;
+
+    font-weight:normal;
+}
+
+/* Quand adiciono o display: flex no main significa que eu quero deixar os elementos um n lado do outro */
+
+main {
+    display: flex;
+    /* Pra deixar os elementos e preciso usar o codigo abaixo */
+    align-items: center;
+    /* Espaçamento entre os elementos (space-between)  usa o codigo abaixo */
+    justify-content: space-between;
+
+}
+
+h1 span {
+    color: #89C5CC;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+     
+    /* 40 de largura em cima e em baixo e 0 nas laterais  */
+    margin: 40px 0;
+}
+
+/* Tudo que está em minusculo fica MAIUSCULO (Comece já) button whatssap */
+
+button {
+    /* texto  */
+
+    color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+
+  /* caixa */
+
+/* Onde coloca imagem ou cor de fundo de uma caixa */
+  background: #69b99d;
+  /* borda da minha caia */
+  border: 0;
+   /* alinhamento dentro da caixa, top 14px - right 32px - bottom 15px - left 32px */
+padding: 14px 32px 15px;
+  /* Alinhar elementos detro da minha caixa */
+ display: flex;
+  /* propriedades abaixo para alinhar dentro do display: flex */
+ align-items: center;
+ justify-content: center;
+
+ /* Espaço entre o logo do Whats e a escrita ( @ -10- começe já) */
+ gap: 10px;
+
+ /* Borda arredondada na caixa do bottom */
+ border-radius: 4px;
+
+ /* Colocar a mãozinha quando passa o mauser em cima do bottom */
+ cursor: pointer;
+}
+/*mudar a cor do button quando passa o mauser em cima*/
+button:hover {
+    background: #24b180;
+}
+
+footer {
+   font-size: 14px;
+   line-height: 28px; 
+
+   /* Alinhamento no centro da pagina */
+   text-align: center;
+
+   margin: 80px;
+}
+
+footer a {
+  font-weight: bold; 
+} 
+/* Mudar a posisão das bolinhas azul para o canto esquerdo inferior fixo */
+#balls {
+   position: fixed;
+   bottom: 0;
+   right: 0; 
+}
